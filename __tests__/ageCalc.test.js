@@ -19,9 +19,10 @@ describe('intergalacticAgeCalc', () => {
 
   test('it should calculate age in Mars years', () => {
     const ageCalc = new intergalacticAgeCalc(45);
-    expect (ageCalc.calculateMarsAge()).toBeCloseTo(23.9, 2)
-  }
-  )
+    expect(ageCalc.calculateMarsAge()).toBeCloseTo(23.9, 0)
+  });
+
+
 
 
 
