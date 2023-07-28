@@ -5,7 +5,7 @@ export default class intergalacticAgeCalc {
   }
 
   calculateMercuryAge(){
-    
+    return this.earthAge / .24;
   }
   
 }

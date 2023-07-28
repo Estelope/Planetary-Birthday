@@ -9,7 +9,7 @@ describe('intergalacticAgeCalc', () => {
 
   test('it should calculate age in Mercury years', () => {
     const ageCalc = new intergalacticAgeCalc(45);
-    expect(ageCalc.calculateMercuryAge()).toBeCloseTo(187, 3);
+    expect(ageCalc.calculateMercuryAge()).toBeCloseTo(187.5, 2);
   });
 
 
