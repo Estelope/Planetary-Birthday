@@ -27,7 +27,18 @@ describe('intergalacticAgeCalc', () => {
     expect(ageCalc.calculateJupiterAge()).toBeCloseTo(3.794, 0)
   });
 
-
-
+  test('it should determine how many years have passed on each planet since a past birthday', () => {
+    const ageCalc = new intergalacticAgeCalc(56);
+    let yearsPassed = ageCalc.calculateYearsPassed(43);
+    let outcomes = {
+      earth : 13,
+      mercury: 54.16,
+      venus: 20.96,
+      mars: 6.91,
+      jupiter: 1.09,
+    }
+    expect(yearsPassed).toBeCloseTo(outcomes, 2);
+  });
+  
 });
 
