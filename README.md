@@ -1,10 +1,8 @@
-# template repo
- will serve as a template for future projects
-uploading gitignore is always first step
+# Planetary Birthday Calculator
 
  #### By Estevan Lopez
 
-#### A ready-to-use project starter pack with pre-configured settings, testing, documentation, and best practices.
+#### business logic and tests for an app that takes an age and returns it from a planetary perspective 
 
 ## Technologies Used
 
@@ -13,6 +11,8 @@ uploading gitignore is always first step
 * Github
 * JavaScript ES6
 * Browsers
+* JSON
+
 ## Dependencies
 * Babel for transpiling the code.
 * Bootstrap for styling the app.
@@ -22,8 +22,7 @@ uploading gitignore is always first step
 
 
 ## Description
-DESCRIPTION
-
+simple application that allows users to calculate their age on different planets based on their age on Earth. Each planet has its own solar year, and this calculator takes that into account to provide accurate age conversions.
 
 
 
@@ -35,10 +34,10 @@ DESCRIPTION
 * Navigate to top level of directory
 * open index.html in compatible web browser
 * below is the link for cloning the repo and instructions 
-* repo:
+* repo:https://github.com/Estelope/Planetary-Birthday
 * Clone the repository to your local machine.
-* Run npm install to install all dependencies.
-* Run npm run build to build the project.
+* Run "npm install" to install all dependencies.
+* Run "npm run build" or "start" to build the project.
 * open index.html in compatible web browser
 
 
