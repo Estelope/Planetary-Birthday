@@ -22,7 +22,10 @@ describe('intergalacticAgeCalc', () => {
     expect(ageCalc.calculateMarsAge()).toBeCloseTo(23.9, 0)
   });
 
-
+  test('it should calculate age in Jupiter years', () => {
+    const ageCalc = new intergalacticAgeCalc(45);
+    expect(ageCalc.calculateJupiterAge()).toBeCloseTo(3.794, 0)
+  });
 
 
 
