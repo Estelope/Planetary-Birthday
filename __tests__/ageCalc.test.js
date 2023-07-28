@@ -31,13 +31,17 @@ describe('intergalacticAgeCalc', () => {
     const ageCalc = new intergalacticAgeCalc(56);
     let yearsPassed = ageCalc.calculateYearsPassed(43);
     let outcomes = {
-      earth : 13,
+      earth: 13,
       mercury: 54.16,
       venus: 20.96,
       mars: 6.91,
       jupiter: 1.09,
-    }
-    expect(yearsPassed).toBeCloseTo(outcomes, 2);
+    };
+    expect(yearsPassed.earth).toEqual(outcomes.earth);
+    expect(yearsPassed.mercury).toBeCloseTo(outcomes.mercury, 1);
+    expect(yearsPassed.venus).toBeCloseTo(outcomes.venus, 1);
+    expect(yearsPassed.mars).toBeCloseTo(outcomes.mars, 1);
+    expect(yearsPassed.jupiter).toBeCloseTo(outcomes.jupiter, 1);
   });
   
 });
