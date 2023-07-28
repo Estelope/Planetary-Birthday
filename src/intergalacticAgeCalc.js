@@ -17,7 +17,7 @@ export default class intergalacticAgeCalc {
   }
 
   calculateJupiterAge(){
-    
+    return this.earthAge / 11.86;
   }
 }
 // Returns their age in Mercury years. (A Mercury year is .24 Earth years.)
