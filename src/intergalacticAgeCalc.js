@@ -36,7 +36,18 @@ export default class intergalacticAgeCalc {
   }
 
   calculateYearsToPass(futureBirthday) {
-    
+    const ageOnMercuryAtFutureBirthday = (futureBirthday / 0.24) - this.calculateMercuryAge();
+    const ageOnVenusAtFutureBirthday = (futureBirthday / 0.62) - this.calculateVenusAge();
+    const ageOnMarsAtFutureBirthday = (futureBirthday / 1.88) - this.calculateMarsAge();
+    const ageOnJupiterAtFutureBirthday = (futureBirthday / 11.86) - this.calculateJupiterAge();
+
+    return {
+      earth: futureBirthday - this.earthAge,
+      mercury: ageOnMercuryAtFutureBirthday,
+      venus: ageOnVenusAtFutureBirthday,
+      mars: ageOnMarsAtFutureBirthday,
+      jupiter: ageOnJupiterAtFutureBirthday,
+    };
   }
 
 

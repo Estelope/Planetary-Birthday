@@ -53,7 +53,7 @@ describe('intergalacticAgeCalc', () => {
       mars: 2.65,
       jupiter: .42,
     };
-    expect(yearsToPass).toEqual(outcomes.earth);
+    expect(yearsToPass.earth).toEqual(outcomes.earth);
     expect(yearsToPass.mercury).toBeCloseTo(outcomes.mercury, 1);
     expect(yearsToPass.venus).toBeCloseTo(outcomes.venus, 1);
     expect(yearsToPass.mars).toBeCloseTo(outcomes.mars, 1);
