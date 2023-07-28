@@ -7,6 +7,10 @@ export default class intergalacticAgeCalc {
   calculateMercuryAge(){
     return this.earthAge / .24;
   }
+
+  calculateVenusAge(){
+    
+  }
   
 }
 // Returns their age in Mercury years. (A Mercury year is .24 Earth years.)

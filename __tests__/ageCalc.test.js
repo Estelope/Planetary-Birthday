@@ -12,6 +12,12 @@ describe('intergalacticAgeCalc', () => {
     expect(ageCalc.calculateMercuryAge()).toBeCloseTo(187.5, 2);
   });
 
+  test('it should calculate age in Venus years', () => {
+    const ageCalc = new intergalacticAgeCalc(45);
+    expect(ageCalc.calculateVenusAge()).toBeCloseTo(72,58, 2);
+  });
+
+
 
 });
 
