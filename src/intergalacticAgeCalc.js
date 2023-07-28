@@ -4,19 +4,19 @@ export default class intergalacticAgeCalc {
     this.earthAge = earthAge;
   }
 
-  calculateMercuryAge(){
+  calculateMercuryAge() {
     return this.earthAge / .24;
   }
 
-  calculateVenusAge(){
+  calculateVenusAge() {
     return this.earthAge / .62;
   }
-  
-  calculateMarsAge(){
+
+  calculateMarsAge() {
     return this.earthAge / 1.88;
   }
 
-  calculateJupiterAge(){
+  calculateJupiterAge() {
     return this.earthAge / 11.86;
   }
 
@@ -33,7 +33,11 @@ export default class intergalacticAgeCalc {
       mars: ageOnMarsAtPastBirthday,
       jupiter: ageOnJupiterAtPastBirthday,
     };
-}
+  }
+
+  calculateYearsToPass(futureBirthday) {
+    
+  }
 
 
 }

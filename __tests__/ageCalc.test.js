@@ -43,6 +43,22 @@ describe('intergalacticAgeCalc', () => {
     expect(yearsPassed.mars).toBeCloseTo(outcomes.mars, 1);
     expect(yearsPassed.jupiter).toBeCloseTo(outcomes.jupiter, 1);
   });
+  test('it should determine how many years have yet to pass until a future birthday. ', () => {
+    const ageCalc = new intergalacticAgeCalc(30);
+    let yearsToPass = ageCalc.calculateYearsToPass(35);
+    let outcomes = {
+      earth: 5,
+      mercury: 20.83,
+      venus: 8.06,
+      mars: 2.65,
+      jupiter: .42,
+    };
+    expect(yearsToPass).toEqual(outcomes.earth);
+    expect(yearsToPass.mercury).toBeCloseTo(outcomes.mercury, 1);
+    expect(yearsToPass.venus).toBeCloseTo(outcomes.venus, 1);
+    expect(yearsToPass.mars).toBeCloseTo(outcomes.mars, 1);
+    expect(yearsToPass.jupiter).toBeCloseTo(outcomes.jupiter, 1);
+  });
   
 });
 
