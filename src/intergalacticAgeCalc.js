@@ -9,7 +9,7 @@ export default class intergalacticAgeCalc {
   }
 
   calculateVenusAge(){
-    
+    return this.earthAge / .62
   }
   
 }
