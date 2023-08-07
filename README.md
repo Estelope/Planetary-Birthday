@@ -8,10 +8,15 @@
 
 * HTML/CSS
 * Markdown
-* Github
-* JavaScript ES6
+* Github / git
+* JavaScript
 * Browsers
 * JSON
+* npm
+* webpack
+* eslint
+* Jest
+* Babel
 
 ## Dependencies
 * Babel for transpiling the code.
@@ -37,8 +42,8 @@ simple application that allows users to calculate their age on different planets
 * repo:https://github.com/Estelope/Planetary-Birthday
 * Clone the repository to your local machine.
 * Run "npm install" to install all dependencies.
-* Run "npm run build" or "start" to build the project.
-* open index.html in compatible web browser
+* Run "npm run build" or "start" to build the project and open corresponding dev server in browser .
+* test the project "npm run test"
 
 
 ## Known Bugs

@@ -62,3 +62,5 @@ describe('intergalacticAgeCalc', () => {
 
 });
 
+// many expect statements are checked for the last two test.  You want unit tests to only check one thing at a time, so if one fails, it's easy to pinpoint what part of your code isn't working. You can write a single expect statement for an entire object.
+// add edge cases for more robust code
